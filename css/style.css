@@ -41,7 +41,24 @@ header{
     width: 100%;
     top: 0;
     left: 0;
+    height: 60px;
 }
+
+
+
+.header.shrink{
+    box-shadow: 0 5px 5px #0001;
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(4px);
+    color: white;
+    transition: 0.3s;
+}
+
+.header.shrink .navbar{
+    height: 60px;
+}
+
+
 
 .top{
     width: 50px;
@@ -62,8 +79,8 @@ header{
 }
 
 .top.hidden{
-    bottom: -60px;
-    right: -60px;
+    bottom: -50px;
+    right: -50px;
 }
 
 
@@ -75,9 +92,14 @@ header{
     flex: 1;
     border-bottom: 1px solid #ddd;
     margin-bottom: 60px;
-    
+    transition: 0.3s;
 }
 
+.navbar__logo p{
+    width: 136px;
+    font-weight: 700;
+    line-height: 29px;
+}
 
 .navbar__menu{
     display: flex;
